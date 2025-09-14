@@ -52,3 +52,67 @@
   }
 }
 
+violin = \relative d' {
+  \clef treble
+  \key d \major
+  \time 4/4
+
+  % Introductory comment
+  \markup {
+    \column {
+      \line { \bold "Objective:" }
+      \line { "Play the scale slowly with correct finger usage and full bow strokes." }
+      \line { "Focus on relaxed hand posture and smooth tone production." }
+    }
+  }
+
+  % Scale ascending
+  \markup { \bold "Ascending Scale (Sa Re Ga Ma Pa Dha Ni Sa)" }
+  d4^\markup { "Sa - 1st finger" }
+  e^\markup { "Re - Index finger" }
+  fis^\markup { "Ga - Index finger" }
+  g^\markup { "Ma - Middle finger (stretched)" } |
+  a^\markup { "Pa - Ring finger" }
+  b^\markup { "Dha - Pinky" }
+  cis^\markup { "Ni - Pinky (stretched)" }
+  d^\markup { "Sa - High" }
+
+  \markup {
+    \italic "Use the full bow from frog to tip. Keep the hand relaxed and loose."
+  }
+
+  \break
+
+  % Scale descending
+  \markup { \bold "Descending Scale (Sa Ni Dha Pa Ma Ga Re Sa)" }
+  d4^\markup { "Sa - High" }
+  cis^\markup { "Ni - Pinky" }
+  b^\markup { "Dha - Pinky" }
+  a^\markup { "Pa - Ring finger" } |
+  g^\markup { "Ma - Middle finger" }
+  fis^\markup { "Ga - Index finger" }
+  e^\markup { "Re - Index finger" }
+  d^\markup { "Sa - Low" }
+
+  \markup {
+    \italic "Start slowly. Increase speed only after mastering tone and posture."
+  }
+
+  % Posture reminder
+  \markup {
+    \column {
+      \line { \bold "Posture Tip:" }
+      \line { "Hold the violin gently under the jaw—not clamped." }
+      \line { "Left hand should be relaxed, not tense or collapsed." }
+      \line { "Avoid squeezing the neck—let the fingers float and stretch naturally." }
+    }
+  }
+}
+
+\score {
+  \new Staff \with {
+    instrumentName = "Violin"
+  } \violin
+  \layout { }
+}
+
