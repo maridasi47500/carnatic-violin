@@ -37,23 +37,26 @@ violin = \relative c' {
   % 1x speed
   \markup { \bold "1x Speed (Quarter Notes)" }
   d4 e fis g | a b cis d |
-
+\relative c' {
   % 2x speed
   \markup { \bold "2x Speed (Eighth Notes)" }
   d8 e fis g a b cis d |
-
+}
+\relative c' {
   % 4x speed
   \markup { \bold "4x Speed (Sixteenth Notes)" }
   d16 e fis g a b cis d |
-
+}
+\relative c' {
   % 8x speed
   \markup { \bold "8x Speed (Thirty-second Notes)" }
   d32 e fis g a b cis d |
-
+}
+\relative c' {
   % 16x speed
   \markup { \bold "16x Speed (Sixty-fourth Notes)" }
   d64 e fis g a b cis d |
-
+}
   \markup {
     \column {
       \line { \bold "Technique Notes:" }
